@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/home",
+    "/profile",
+    "/reports",
+    "/settings"
+  ]
+}
