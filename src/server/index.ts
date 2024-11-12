@@ -1,7 +1,9 @@
 import express from 'express'
 import { api } from './api';
 
+const PORT = 3002;
+
 const app = express();
 app.use(api);
 app.get("/api/hi", (req, res)=>res.send("Hello"))
-app.listen(3002, ()=>console.log("Started"))
+app.listen(PORT, ()=>console.log(`Server running on port ${PORT}`))
