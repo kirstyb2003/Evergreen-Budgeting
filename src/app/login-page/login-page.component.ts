@@ -30,6 +30,10 @@ export class LoginPageComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log("Trying to submit vals");
+    if (this.loginForm.invalid) {
+      this.loginForm.markAllAsTouched();
+    } else {
+      console.log('Form Submitted:', this.loginForm.value);
+    }
   }
 }

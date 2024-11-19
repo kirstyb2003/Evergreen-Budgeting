@@ -72,9 +72,18 @@ form {
     background-color: $light-green;
     color: white;
     font-weight: bold;
-    border: none;
+    border: 2px solid $light-green;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.submit_button:hover {
+    background-color: white;
+    color: $light-green;
+}
+
+.submit_button:disabled {
+    cursor: not-allowed
 }
 
 .register_text {
